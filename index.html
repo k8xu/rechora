@@ -7,11 +7,41 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
 
     <title>rechora</title>
   </head>
   <body>
-    <h1>Welcome to rechora!</h1>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand mb-0 h1" href="#">
+        <img src="http://mareconversionpro.fr/wp-content/uploads/2017/05/bootstrap-logo-300x300.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+      rechora
+      </a>
+    </nav>
+
+    <h1 class="welcome">Welcome to rechora!</h1>
+    <h5 class="welcome">Made with love by <strong>k8xu</strong></h5>
+    <br>
+
+    <form>
+      <div class="practice-log-form">
+        <label for="musician-name">Name</label>
+        <input type="name" class="form-control" id="musician-name" placeholder="First Last">
+      </div>
+      <div class="practice-log-form">
+        <label for="instrument-type">Select your instrument</label>
+        <select class="form-control" id="instrument-type">
+          <option>Saxophone</option>
+          <option>Piano</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="practice-log-form">
+        <label for="practice-description">Details of your practice session</label>
+        <textarea class="form-control" id="practice-description" rows="3"></textarea>
+      </div>
+    </form>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

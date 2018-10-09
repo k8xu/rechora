@@ -24,12 +24,12 @@
     <h5 class="welcome">Made with love by <strong>k8xu</strong></h5>
     <br>
 
-    <form>
+    <form action="/practice-log" target="_blank" method="POST">
       <div class="practice-log-form">
         <label for="musician-name">Name</label>
         <input type="name" class="form-control" id="musician-name" placeholder="First Last">
       </div>
-      <div class="practice-log-form">
+      <br><div class="practice-log-form">
         <label for="instrument-type">Select your instrument</label>
         <select class="form-control" id="instrument-type">
           <option>Saxophone</option>
@@ -37,9 +37,12 @@
           <option>Other</option>
         </select>
       </div>
-      <div class="practice-log-form">
+      <br><div class="practice-log-form">
         <label for="practice-description">Details of your practice session</label>
-        <textarea class="form-control" id="practice-description" rows="3"></textarea>
+        <textarea class="form-control" id="practice-description" rows="3" placeholder="Reviewed sonatina in C major"></textarea>
+      </div>
+      <br><div class="practice-log-form">
+          <button type="button" class="btn btn-outline-success">Update practice log!</button>
       </div>
     </form>
     
